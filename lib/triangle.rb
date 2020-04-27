@@ -7,13 +7,12 @@ class Triangle
     @c = c 
   end
   
-  def kind 
-    side1, side2, side3 = [@side1, @side2, @side3].sort
-    raise TriangleError if side1<=0 or side1 = side2 <= side3
-    return :equilateral if side1 == side3
-    return :isosceles if side1 == side2 or side2 == side3
-    return :scalene
-  end
+  def kind
+  a, b, c = [@a, @b, @c].sort
+  raise TriangleError if a <= 0 or a + b <= c
+  return :equilateral if a == c
+  return :isosceles if a == b or b == c
+  return :scalene
   
 class TriangleError < StandardError
   end
