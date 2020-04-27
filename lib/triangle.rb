@@ -13,13 +13,7 @@ class Triangle
   return :equilateral if a == c
   return :isosceles if a == b or b == c
   return :scalene
-    # if ((side1 == side2) && (side2 == side3) && (side == side1))
-    #   return :equilateral
-    # elsif ((side1 == side2) || (side2 == side2) || (b == c))
-    #   return :isosceles
-    # else
-    #   return :scalene
-    # end
+    
   end
 
   
