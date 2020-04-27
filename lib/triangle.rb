@@ -1,4 +1,3 @@
-  
 class Triangle
   # write code here
   attr_accessor :a, :b, :c
@@ -30,4 +29,3 @@ class Triangle
 
   end
 end
-© 2020 GitHub, Inc.
